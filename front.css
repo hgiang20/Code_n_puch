@@ -6,38 +6,37 @@
     text-align: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(0, rgba(51, 51, 51, 0), rgba(204, 204, 204, 1)),
-    url(https://wallpapercave.com/wp/wp6262702.jpg);
-    background-size: cover;    
+    url(https://img.freepik.com/free-vector/aesthetic-pastel-pink-background-rainbow-sky-with-glitter-design-vector_53876-156332.jpg?w=2000);   
+    background-size: cover;
+
   }
   
    html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   } 
 
   form {
     width: 400px;
     padding: 50px;
-    border: 15px solid black;
-    background-image: linear-gradient(0, rgba(51, 51, 51, 10), rgb(230, 155, 213)),
-    border-radius: 20px;
+    border: 5px solid rgb(202, 166, 166);
+    box-shadow : 0 30px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
     border-width: 5px;
-    border-color: #e6cde6;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.4);
-
+    border-color: #f1d0f1;
+    background-image: linear-gradient(0, rgba(51, 51, 51, 0), rgb(186, 28, 150)),
   }
   h2 {
     text-align: center;
   }
 
   button {
-    background-color: #db84db
-    color: #fff;
-    padding: 10px 20px;
-    border: #pink;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#000000;
+    background-color: #ecdcec;
+    padding: 15px 25px;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    scroll-padding-right: 10px;
     text-align: center;
   }
 
