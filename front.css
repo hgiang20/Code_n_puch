@@ -6,38 +6,48 @@
     text-align: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(0, rgba(51, 51, 51, 0), rgba(204, 204, 204, 1)),
-    url(https://img.freepik.com/free-vector/aesthetic-pastel-pink-background-rainbow-sky-with-glitter-design-vector_53876-156332.jpg?w=2000);   
+    url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg);
     background-size: cover;
 
   }
   
    html {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
   } 
 
   form {
     width: 400px;
     padding: 50px;
-    border: 5px solid rgb(202, 166, 166);
+    background-color:
+    border: 1px solid rgb(243, 235, 235);
     box-shadow : 0 30px 50px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    border-width: 5px;
-    border-color: #f1d0f1;
-    background-image: linear-gradient(0, rgba(51, 51, 51, 0), rgb(186, 28, 150)),
+    border-width: 1px;
+    border-color: #fae2fa;
+    background-image: linear-gradient(0, rgba(51, 51, 51, 0), rgba(204, 204, 204, 1));
+    transition: all 1s ease;  
   }
+
   h2 {
     text-align: center;
   }
 
   button {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#000000;
-    background-color: #ecdcec;
-    padding: 15px 25px;
-    border-radius: 15px;
-    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-decoration:dotted;
+    background-color: rgb(195, 212, 223);
+    color:#071119;
+    display:inline-block;
+    padding: 10px 40px;
+    position:relative;
+    border: 3px solid #c5d4eb;
+    border-radius: 8px;
     cursor: pointer;
-    text-align: center;
+    transition: all 1s ease;
   }
 
   submit{
