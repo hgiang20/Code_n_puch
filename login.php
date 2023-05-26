@@ -1,74 +1,95 @@
-<?php
-include 'connect.php';
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-    $sql = "select * from user WHERE email='" . $email . "' and password='" . $password . "'";
-
-    $result = mysqli_query($conn, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_array($result);
-
-        if ($row["role"] == "0") {
-            $_SESSION["email"] = $email;
-
-            header("location: student.php");
-        } elseif ($row["role"] == "1") {
-            $_SESSION["email"] = $email;
-            header("location: teacher.php");
-        }
-    } else {
-        echo "email or password is incorect";
-    }
-}
-
-
-
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset = "UTF-8">
+    <title>SIGN IN</title>
+    <link rel = "stylesheet" href = "css/login.css">
 </head>
-
 <body>
-    <center>
-        <h1>Log in uwwu</h1>
-        <br><br><br><br>
-        <div style="background-color: purple;">
-            <br><br>
-
-            <form action="#" method="POST">
-
-
-                <div>
-                    <label>email</label>
-                    <input type="text" name="email" required>
-                </div>
-                <br><br>
-                <div>
-                    <label>password</label>
-                    <input type="password" name="password" required>
-                </div>
-                <br><br>
-                <div>
-                    <input type="submit" value="login">
-                </div>
-            </form>
-            <br><br>
-    </center>
+    <section>
+        <div class = "form-box">
+            <div class = "form-value">
+                <form action = "">
+                    <h2>SIGN IN</h2>
+                    <div class = "inputbox">
+                        <input type = "username" required>
+                        <label for = "">Username</label>
+                    </div>
+                    <div class = "inputbox">
+                        <input type = "password" required>
+                        <label for = "">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for = ""><input type = "checkbox">Remember me</label>
+                    </div>
+                    <div class="loginAs">
+                        <a href="#"><i class="teacher"></i><button>As teacher</button></a>
+                        <a href="#"><i class="student"></i><button>As student</button></a>
+                    </div>
+                    <div class = "register">
+                        <p>Don't have an account?<a href="#"> Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
+
+
+
+<!-- <body>
+    <div class = "container">
+        <form class = "form-signin">
+            <h1>SIGN IN</h1>
+            <div class = "form-text">
+                <label>Username</label>
+                <input type = "text">
+            </div>
+            <div class = "form-text">
+                <label>Password</label>
+                <input type = "password">
+            </div>
+            <label for = "lang-select">You are</label>
+            <select name = "lang" id = "lang-select">
+                <option value = "">--Choose your job--</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+            </select>
+            <button type = "submit">Submit</button>       
+        </form>
+</body> -->
+<!-- <body>
+    <div class = "container">
+        <form class = "form-signin">
+            <h1>SIGN IN</h1>
+			<table>
+				<tr>
+					<div class = "form-text">
+						<td><label>Username</label></td>
+						<td><input type = "text"></td>
+					</div>
+				</tr>
+				<tr>
+					<div class = "form-text">
+						<td><label>Password</label></td>
+						<td><input type = "password"></td>
+					</div>
+				</tr>
+				<tr>
+					<td><label for = "lang-select">You are</label></td>
+					<td>
+						<select name = "lang" id = "lang-select">
+						<option value = "">--Choose your job--</option>
+						<option value="teacher">Teacher</option>
+						<option value="student">Student</option>
+						</td>
+					</select>
+				</tr>
+				<button type = "submit">Submit</button>
+                <span>Don't have an account? Sign up <a href="">here</a>
+			</table>
+		</form>
+</body> -->
+

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('https://suamaytinhtphcm.net/wp-content/uploads/2019/11/12/12/tong-hop-hon-90-hinh-nen-den-cho-may-tinh-laptop-9.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+  
+  .container{
+      max-width: 700px;
+      width: 100%;
+      background: transparent;
+      padding: 25px 30px;
+      border-radius: 5px;
+  }
+
+  .title{
+    font-size: 27px;
+    font-weight: 540;
+    position: relative;
+    color: #fff;
+    line-height: 50px;
+  }
+
+  .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20x 0 12px 0;
+  }
+
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    color: #fff;
+  }
+
+  .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  .regis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 17px 0;
+    width: 100%;
+  }
+
+  button{
+    width: 155px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .check-box{
+    display: flex;
+    justify-content: center;
+    margin: 20x 0 12px 0;
+  }
+
+  .gender{
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    color: #fff;
+  }
+
+  .gender .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .role{
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    color: #fff;
+  }
+
+  .role .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .role input{
+    display: relative;
+  }
