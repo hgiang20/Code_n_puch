@@ -9,7 +9,7 @@
     <section>
         <div class = "form-box">
             <div class = "form-value">
-                <form action = "">
+               <form action="process_login.php" method="POST">
                     <h2>SIGN IN</h2>
                     <div class = "inputbox">
                         <input type = "username" required>
